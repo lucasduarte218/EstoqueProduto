@@ -1,0 +1,16 @@
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\EstoqueProduto.exe
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\EstoqueProduto.deps.json
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\EstoqueProduto.runtimeconfig.json
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\EstoqueProduto.runtimeconfig.dev.json
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\EstoqueProduto.dll
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\ref\EstoqueProduto.dll
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\bin\Debug\net5.0\EstoqueProduto.pdb
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.csproj.AssemblyReference.cache
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.AssemblyInfoInputs.cache
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.AssemblyInfo.cs
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.csproj.CoreCompileInputs.cache
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.dll
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\ref\EstoqueProduto.dll
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.pdb
+C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\obj\Debug\net5.0\EstoqueProduto.genruntimeconfig.cache
