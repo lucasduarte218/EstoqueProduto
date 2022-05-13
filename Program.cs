@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace EstoqueProduto {
     class Program {
@@ -12,13 +13,13 @@ namespace EstoqueProduto {
         }
         static void Menu() {
             int sair = 0;
-            Int32 opcao;
+            int opcao;
             while (sair == 0) {
                 
                 Console.Clear();
                 Console.WriteLine("Escolha opcao desejada");
                 Console.WriteLine("1)Criar Produto\n2)Listar Produtos\n3)Excluir Produtos\n4)Editar Produtos");
-                opcao = Int32.Parse(Console.ReadLine().Trim());
+                opcao = int.Parse(Console.ReadLine().Trim());
                 switch (opcao) {
                     case 1:
                         // Criar produto
@@ -27,6 +28,8 @@ namespace EstoqueProduto {
                     case 2:
                         // Listar produtos
                         ListarProdutos();
+                        Console.WriteLine("pressione uma tecla para continuar\n");
+                        Console.ReadLine();
                         break;
                     case 3:
                         //Excluir produto
@@ -49,7 +52,7 @@ namespace EstoqueProduto {
                     default:
                         // opcao invalida,
                         Console.WriteLine("Opcao invalida, pressione qualquer tecla para continuar");
-                        Console.Read();
+                        Console.ReadLine();
                         break;
                 }
             }
@@ -66,53 +69,69 @@ namespace EstoqueProduto {
             Produto NovoProduto = new Produto(nome, preco, quantidade,ID);
             ListaProdutos.Add(NovoProduto);
             Console.WriteLine("Produto {0} adicionado com sucesso! \npressione uma tecla para continuar\n",nome);
-            Console.Read();
+            Console.ReadLine();
         }
 
         static void ListarProdutos() {
             Console.Clear();
             foreach (Produto produto in ListaProdutos) {
-                Console.WriteLine(produto.ID1 + ") " + produto.Nome1);  
+                Console.WriteLine(produto.ID1 + ") " + produto.Nome1);
+                
             }
         }
         static void RemoverProduto() {
-            ListarProdutos();
-            Console.WriteLine("Selecione o produto que deseja remover:");
-            int opcao = int.Parse(Console.ReadLine().Trim());
-            if(opcao <= ListaProdutos.Capacity) {
-                ListaProdutos[opcao-1] = null;
-                ListaProdutos.RemoveAt(opcao);
+            if (ListaProdutos.Count != 0)
+            {
+                ListarProdutos();
+                Console.WriteLine("Selecione o produto que deseja remover:");
+                int opcao = int.Parse(Console.ReadLine().Trim());
+                if (opcao <= ListaProdutos.Count)
+                {
+                    ListaProdutos[opcao - 1] = null;
+                    ListaProdutos.RemoveAt(opcao - 1);
+                }
+                else
+                {
+                    Console.WriteLine("Opcao invalida\npressione uma tecla para continuar\n");
+                    Console.ReadLine();
+                }
             }
-            else {
-                Console.WriteLine("Opcao invalida");
-                Menu();
+            else
+            {
+                Console.WriteLine("Não há produtos!\npressione uma tecla para continuar\n ");
+                
+                Console.ReadLine();
             }
-
         }
 
-        static void EditarProduto() {
-            ListarProdutos();
-            Console.WriteLine("Selecione o produto que deseja editar:");
-            int opcao = int.Parse(Console.ReadLine().Trim());
-            if (opcao <= ListaProdutos.Capacity) {    
-                Console.WriteLine("Escolha opcao desejada");
-                Console.WriteLine("1)Editar Nome \n 2)Editar Preço \n 3)Sair");
-                opcao = int.Parse(Console.ReadLine().Trim());
-                switch (opcao) {
+        static void EditarProduto()
+        {
+            if (ListaProdutos.Count != 0)
+            {
+                ListarProdutos();
+                Console.WriteLine("Selecione o produto que deseja editar:");
+                int opcao = int.Parse(Console.ReadLine().Trim());
+                if (opcao <= ListaProdutos.Count)
+                {
+                    Console.WriteLine("Escolha opcao desejada\n");
+                    Console.WriteLine(" \n1)Editar Nome \n 2)Editar Preço \n 3)Sair");
+                    opcao = int.Parse(Console.ReadLine().Trim());
+                    switch (opcao)
+                    {
                         case 1:
                             // Editar Nome
-                            Console.WriteLine("Nome atual = "+ ListaProdutos[opcao].Nome1);
+                            Console.WriteLine("Nome atual = " + ListaProdutos[opcao-1].Nome1);
                             Console.WriteLine("=========================================");
                             Console.WriteLine("Digite o novo nome:");
-                            ListaProdutos[opcao].Nome1 = Console.ReadLine().Trim();
+                            ListaProdutos[opcao-1].Nome1 = Console.ReadLine().Trim();
                             Console.WriteLine("nome alterado com sucesso!");
                             break;
                         case 2:
                             // Editar preço
-                            Console.WriteLine("Preço atual = " + ListaProdutos[opcao].Preco1);
+                            Console.WriteLine("Preço atual = " + ListaProdutos[opcao-1].Preco1);
                             Console.WriteLine("=========================================");
                             Console.WriteLine("Digite o novo Preço:");
-                            ListaProdutos[opcao].Preco1 = double.Parse(Console.ReadLine().Trim());
+                            ListaProdutos[opcao-1].Preco1 = double.Parse(Console.ReadLine().Trim());
                             Console.WriteLine("Preço alterado com sucesso!");
                             break;
                         case 3:
@@ -121,15 +140,22 @@ namespace EstoqueProduto {
 
                         default:
                             // opcao invalida,
-                            Console.WriteLine("Opcao invalida, pressione qualquer tecla para continuar");
-                            Console.Read();
+                            Console.WriteLine("Opcao invalida! \npressione qualquer tecla para continuar\n");
+                            Console.ReadLine();
                             break;
+                    }
+
                 }
-                
+                else
+                {
+                    Console.WriteLine("Opcao invalida, pressione qualquer tecla para continuar");
+                    Console.ReadLine();
+                }
             }
-            else {
-                Console.WriteLine("Opcao invalida, pressione qualquer tecla para continuar");
-                Console.Read();
+            else
+            {
+                Console.WriteLine("Não há produtos!\npressione uma tecla para continuar\n ");
+                Console.ReadLine();
             }
         }
     }

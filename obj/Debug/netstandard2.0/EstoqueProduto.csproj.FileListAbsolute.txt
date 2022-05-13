@@ -1,0 +1,10 @@
+C:\DEV\Curso C#\EstoqueProduto\bin\Debug\netstandard2.0\EstoqueProduto.deps.json
+C:\DEV\Curso C#\EstoqueProduto\bin\Debug\netstandard2.0\EstoqueProduto.dll
+C:\DEV\Curso C#\EstoqueProduto\bin\Debug\netstandard2.0\EstoqueProduto.pdb
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.csproj.AssemblyReference.cache
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.AssemblyInfoInputs.cache
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.AssemblyInfo.cs
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.csproj.CoreCompileInputs.cache
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.dll
+C:\DEV\Curso C#\EstoqueProduto\obj\Debug\netstandard2.0\EstoqueProduto.pdb
