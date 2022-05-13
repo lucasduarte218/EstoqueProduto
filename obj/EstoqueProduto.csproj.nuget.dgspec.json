@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\Curso C#\\EstoqueProduto\\EstoqueProduto.csproj": {}
+    "C:\\Users\\lucas.duarte\\OneDrive - FitBank Pagamentos Eletrônicos\\FITBANK\\Cartão pré-pago\\Cursos\\Curso C# completo\\Codigos\\EstoqueProduto\\EstoqueProduto\\EstoqueProduto.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\Curso C#\\EstoqueProduto\\EstoqueProduto.csproj": {
+    "C:\\Users\\lucas.duarte\\OneDrive - FitBank Pagamentos Eletrônicos\\FITBANK\\Cartão pré-pago\\Cursos\\Curso C# completo\\Codigos\\EstoqueProduto\\EstoqueProduto\\EstoqueProduto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\Curso C#\\EstoqueProduto\\EstoqueProduto.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.duarte\\OneDrive - FitBank Pagamentos Eletrônicos\\FITBANK\\Cartão pré-pago\\Cursos\\Curso C# completo\\Codigos\\EstoqueProduto\\EstoqueProduto\\EstoqueProduto.csproj",
         "projectName": "EstoqueProduto",
-        "projectPath": "C:\\DEV\\Curso C#\\EstoqueProduto\\EstoqueProduto.csproj",
-        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\Curso C#\\EstoqueProduto\\obj\\",
+        "projectPath": "C:\\Users\\lucas.duarte\\OneDrive - FitBank Pagamentos Eletrônicos\\FITBANK\\Cartão pré-pago\\Cursos\\Curso C# completo\\Codigos\\EstoqueProduto\\EstoqueProduto\\EstoqueProduto.csproj",
+        "packagesPath": "C:\\Users\\lucas.duarte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas.duarte\\OneDrive - FitBank Pagamentos Eletrônicos\\FITBANK\\Cartão pré-pago\\Cursos\\Curso C# completo\\Codigos\\EstoqueProduto\\EstoqueProduto\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lucas.duarte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
