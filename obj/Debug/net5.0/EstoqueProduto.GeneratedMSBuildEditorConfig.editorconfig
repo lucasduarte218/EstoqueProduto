@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = EstoqueProduto
-build_property.ProjectDir = C:\Users\lucas.duarte\OneDrive - FitBank Pagamentos Eletrônicos\FITBANK\Cartão pré-pago\Cursos\Curso C# completo\Codigos\EstoqueProduto\EstoqueProduto\
+build_property.ProjectDir = C:\DEV\Curso C#\EstoqueProduto\

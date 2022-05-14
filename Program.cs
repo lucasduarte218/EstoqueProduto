@@ -18,7 +18,7 @@ namespace EstoqueProduto {
                 
                 Console.Clear();
                 Console.WriteLine("Escolha opcao desejada");
-                Console.WriteLine("1)Criar Produto\n2)Listar Produtos\n3)Excluir Produtos\n4)Editar Produtos");
+                Console.WriteLine("1)Criar Produto\n2)Listar Produtos\n3)Excluir Produtos\n4)Editar Produtos\n5)Adicionar estoque de Produtos\n6)Remover estoque de Produtos\n7)Sair");
                 opcao = int.Parse(Console.ReadLine().Trim());
                 switch (opcao) {
                     case 1:
@@ -46,9 +46,11 @@ namespace EstoqueProduto {
                         // editar produto
                         break;
                     case 5:
+                        Adicionarestoquedeprodutos();
                         // Adicionar estoque de produtos
                         break;
                     case 6:
+                        Removerestoquedeprodutos();
                         // Remover estoque de produtos
                         break;
                     case 7:
@@ -91,7 +93,7 @@ namespace EstoqueProduto {
                 ListarProdutos();
                 Console.WriteLine("Selecione o produto que deseja remover:");
                 int opcao = int.Parse(Console.ReadLine().Trim());
-                if (opcao <= ListaProdutos.Count)
+                if (opcao < ListaProdutos.Count)
                 {
                     ListaProdutos[opcao] = null;
                     ListaProdutos.RemoveAt(opcao);
@@ -117,7 +119,7 @@ namespace EstoqueProduto {
                 ListarProdutos();
                 Console.WriteLine("Selecione o produto que deseja editar:");
                 int produtoID = int.Parse(Console.ReadLine().Trim());
-                if (produtoID <= ListaProdutos.Count)
+                if (produtoID < ListaProdutos.Count)
                 {
                     Console.WriteLine("Escolha opcao desejada\n");
                     Console.WriteLine(" \n1)Editar Nome\n2)Editar Preço\n3)Sair");
@@ -164,6 +166,59 @@ namespace EstoqueProduto {
             else
             {
                 Console.WriteLine("Não há produtos!\npressione uma tecla para continuar\n ");
+                Console.ReadLine();
+            }
+        }
+
+        static void Adicionarestoquedeprodutos()
+        {
+            if (ListaProdutos.Count != 0)
+            {
+                ListarProdutos();
+                Console.WriteLine("Selecione o produto que deseja incrementar:");
+                int produtoID = int.Parse(Console.ReadLine().Trim());
+                if (produtoID < ListaProdutos.Count)
+                {
+                    Console.WriteLine("Escolha a quantidade:\n");   
+                    int opcao = Math.Abs(int.Parse(Console.ReadLine().Trim()));
+                    ListaProdutos[produtoID].Quantidade1 = ListaProdutos[produtoID].Quantidade1 + opcao;
+                }
+                else
+                {
+                    Console.WriteLine("Opcao invalida\npressione uma tecla para continuar\n");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Não há produtos!\npressione uma tecla para continuar\n ");
+
+                Console.ReadLine();
+            }                       
+        }
+        static void Removerestoquedeprodutos()
+        {
+            if (ListaProdutos.Count != 0)
+            {
+                ListarProdutos();
+                Console.WriteLine("Selecione o produto que deseja decrementar:");
+                int produtoID = int.Parse(Console.ReadLine().Trim());
+                if (produtoID < ListaProdutos.Count)
+                {
+                    Console.WriteLine("Escolha a quantidade:\n");
+                    int opcao = Math.Abs(int.Parse(Console.ReadLine().Trim()));
+                    ListaProdutos[produtoID].Quantidade1 = ListaProdutos[produtoID].Quantidade1 - opcao;
+                }
+                else
+                {
+                    Console.WriteLine("Opcao invalida\npressione uma tecla para continuar\n");
+                    Console.ReadLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Não há produtos!\npressione uma tecla para continuar\n ");
+
                 Console.ReadLine();
             }
         }
